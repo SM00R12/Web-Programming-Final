@@ -1,0 +1,633 @@
+/* Web Programming Final Project
+
+
+
+Stephen Moore
+Riane Hood
+Lois Odion*/
+
+/* 
+	Font Family DO NOT DELETE
+
+    font-family: 'Cinzel', serif;
+
+    font-family: 'Lato', sans-serif;
+*/
+
+* {
+  	box-sizing: border-box;
+}
+
+body {
+  	padding: 10px;
+}
+
+p {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	color: black;
+	font-size:48;
+	font-family: 'Cinzel', serif;
+}
+
+h2 {
+	color: black;
+	font-size:32px;
+	font-family: 'Cinzel', serif;
+}
+
+h3 {
+	color: black;
+	font-size:24px;
+	font-family: 'Cinzel', serif;
+}
+
+h5 {
+	color: black;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
+ul {
+	color: black;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	background-color: #ffe6e6;
+	text-decoration: shadow;
+}
+.col-12 {
+	background-color: white;
+}
+.col-s-12 {
+	background-color: white;
+}
+.topblock{
+background-color: #ffe6e6;
+font-family: 'Shirkhand', cursive;}
+.nav {
+	color: black;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+.nav:hover{
+	background-color: #ffe6e6;
+	color:black;
+}
+.btn {
+	text-align: center;
+	vertical-align: middle;
+	padding: .67em;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-primary {
+	max-width: 90%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	background-color:#56ccf2;
+	transition-duration: .5s;
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+.btn:hover{
+background-color: white;
+color: black;
+border: 1px solid #56ccf2;
+cursor: pointer;
+}
+.store-item {
+	color: black;
+	font-style: center;
+	float: left;
+	width: 30%;
+	height: 580px;
+	padding: 15px;
+	background-color: #ffe6e6;
+	margin-left: 2%;
+	border-top: solid white 2px;
+	margin-bottom: 30px;
+	
+} 
+.store-item { 
+	
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 15%;
+}
+div.store-item img {
+	width: 90%;
+	height: auto;
+	border-radius: 10%;
+	padding: 15px;
+}
+div.store-item:hover {
+	opacity: 70%;
+}
+.shop-item-title {
+	font-weight: bold;
+	width: 95%;
+}
+.shop-item-img {
+	justify-content: space-around;
+}
+.shop-text{
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+.cart-header {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: black;
+}
+.cart-column{
+	display:flex;
+	align-items:center;
+	border-bottom: 1px solid black;
+	margin-right: 1.5em;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	
+}
+.cart-row{
+	display: flex;
+	
+}
+.cart-row:last-child{
+	border-bottom:1px solid black;
+}
+.cart-row:last-child .cart-column {
+	border:none;
+}
+	
+.cart-item{
+	width:55%;
+}
+.cart-price{
+	width:5%;
+	font-size: 1.2em;
+	color: black;
+}
+.cart-quantity{
+	width: 30%;
+}
+.cart-item-title{
+	color: black;
+	margin-left: .5em;
+	font-size: 1.2em;
+}
+.cart-item-img {
+	width: 125px;
+	height: auto;
+	border-radius: 10px;
+}
+.btn-danger {
+	color: white;
+	background-color: #E85757;
+	border: none;
+	font-weight: bold;
+	
+}
+.cart-quantity-input {
+	height: 34px;
+	width: 50px;
+	border-radius: 5px;
+	border: 1px solid #56ccf2;
+	background-color: #eee;
+	color: #333;
+	padding: 0;
+	text-align: center;
+	font-size: 1.2em;
+	margin-right: 25px;
+}
+.cart-total{
+	
+	text-align:end;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.cart-total-title {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: black;
+	margin-right:20px;
+}
+.cart-total-price {
+	color: #333;
+	font-size: 1.5em; 
+
+}
+.btn-purchase {
+	display: block;
+	margin: 40px auto 80px auto;
+	font-size: 1.65em;
+	text-decoration: none;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+	float: left;
+	width: 98%;
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: #ffe6e6;
+	padding-left: 20px;
+}
+
+
+.member {
+	font-family: 'lato', sans-serif;
+	font-size: 15px;
+	font: #ffe6e6;
+}
+	
+.members {
+	height: 200px;
+	width: auto;
+	padding: 10px;
+}
+
+/* Add a card effect for articles */
+.box{
+	color: black;
+	background-color: #ffe6e6;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.lilbox {
+	float: left;
+	color: black;
+	background-color: white;
+	width: 20%;
+	padding: 20px;
+	margin: 2%;
+	border-radius: 2%;
+}
+
+div.place img {
+	float: center;
+	width: 95%;
+	height: auto;
+	border-radius: 90%;
+	padding: 15px;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+   		width: 100%;
+    	padding: 0;
+  }
+}
+.fa {
+	position: left;
+}
+.fa {
+	
+	color: white;
+	padding: 15px;
+	font-size: 50px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	align-items: center;
+}
+.fa:hover {
+	color: #ffe6e6;
+	opacity: 60%;
+}
+.majors {
+	font-family: 'Lato', sans-serif;
+	color: black;
+	list-style: square;
+}
+.bottomrow {
+	width: 100%;
+	float: left;
+}
+
+.span2 {
+	color: black;
+	font-style: center;
+	float: left;
+	width: 23%;
+	height: 500px;
+	padding: 2%;
+	background-color: #ffe6e6;
+	margin-top: 3%;
+	margin-left: 2%;
+	border-top: solid white 2px;
+	margin-bottom: 30px;	
+}
+div.span2 img {
+	width: 100%;
+	height: 160px;
+	border-radius: 70%;
+}
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #ffffff;
+	color: black;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* When moving the mouse over the submit button */
+input[type=submit]:hover {
+	background-color: #ffe6e6;
+}
+
+
+.mySlides {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: gray;
+  opacity: 0.8;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 145px;
+}
+
+div.gallery:hover {
+	border: solid;
+	background-color: #ffe6e6;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 10px;
+	text-align: center;
+}
+
+ div.one{
+ 	background: url("../img/rec/comlabs.jpg"); width:100%; max-width:100%;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ }
+ 
+ .footer{
+ background-color: #ffb3b3;}
+
+ /*                SIGN UP                        */
+
+ /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+
+
+ /* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.signupbtn {
+  padding: 14px 20px;
+  background-color: #ffe6e6;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #ffe6e6;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+ /*               SIGN UP                         */
+
+
+/* This portion made using W3.css's color tool. */
+.w3-theme-l5 {color:#black !important; background-color:#ffffff !important}
+.w3-theme-l4 {color:#black !important; background-color:#ffcccc !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ffb3b3 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#ffffff !important}
+.w3-theme-l1 {color:#fff !important; background-color:#ffb3b3 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#ffe6e6!important}
+.w3-theme-d2 {color:#fff !important; background-color:#ffcccc !important}
+.w3-theme-d3 {color:#fff !important; background-color:#ffb3b3 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#ffb3b3 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#ffffff !important}
+
+.w3-theme-light {color:#000 !important; background-color:#ffb3b3 !important}
+.w3-theme-dark {color:black !important; background-color:#ffcccc !important}
+.w3-theme-action {color:black !important; background-color:#ffffff !important}
+
+.w3-theme {color:black !important; background-color:#ffcccc !important}
+.w3-text-theme {color:#ffb3b3 !important}
+.w3-border-theme {border-color:#ffb3b3 !important}
+
+.w3-hover-theme:hover {color:black !important; background-color:#ffe6e6 !important}
+.w3-hover-text-theme:hover {color:white!important ; background-color: #ffb3b3 !important}
+.w3-hover-border-theme:hover {border-color:#ffe6e6!important}
+.w3-button { color: black }
+.w3-bar-item { color: black}
+.w3-dropdown-hover:hover{ background-color: #ffe6e6}
+
+@media only screen and (min-width: 600px) {
+ .col-s-1 {width: 8.33%;}
+ .col-s-2 {width: 16.6%;}
+ .col-s-3 {width: 25%;}
+ .col-s-4 {width: 33.33%;}
+ .col-s-5 {width: 41.66%;}
+ .col-s-6 {width: 50%;}
+ .col-s-7 {width: 58.33%;}
+ .col-s-8 {width: 66.66%;}
+ .col-s-9 {width: 75%;}
+ .col-s-10 {width: 83.33%;}
+ .col-s-11 {width: 91.66%;}
+ .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+ .col-1 {width: 8.33%;}
+ .col-2 {width: 16.6%;}
+ .col-3 {width: 25%;}
+ .col-4 {width: 33.33%;}
+ .col-5 {width: 41.66%;}
+ .col-6 {width: 50%;}
+ .col-7 {width: 58.33%;}
+ .col-8 {width: 66.66%;}
+ .col-9 {width: 75%;}
+ .col-10 {width: 83.33%;}
+ .col-11 {width: 91.66%;}
+ .col-12 {width: 100%;}
+}
